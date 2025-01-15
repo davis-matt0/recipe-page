@@ -16,11 +16,102 @@ body {
 h1,
 h2 {
   font-family: "Young Serif", sans-serif;
+  letter-spacing: 1px;
+}
+
+h1 {
+  color: hsl(24, 5%, 18%);
+  font-size: 2rem;
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+}
+
+.prep-heading {
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.prep-item::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+li,
+p {
+  color: hsl(30, 10%, 34%);
+}
+
+li {
+  padding-left: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+}
+
+li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.nutrition-desc {
+  max-width: 300px;
+}
+
+.nutrition-value {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+}
+
+.nutrition-table:last-child {
+  border-bottom: none;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  width: 83%;
+  margin: auto;
+}
+
+.prep-info {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.nutrition-table {
+  border-collapse: collapse;
+  width: 100%;
+  padding: 5em 0;
+}
+
+td {
+  padding: 1em 0;
+}
+
+section,
+.table-row {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+section:last-of-type,
+.table-row:last-of-type {
+  border-bottom: none;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 2em;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
