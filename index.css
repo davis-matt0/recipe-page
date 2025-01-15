@@ -104,15 +104,85 @@ section,
 }
 
 section:last-of-type,
-.table-row:last-of-type {
+.table-row:last-of-type,
+section:first-of-type {
   border-bottom: none;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin-top: 2em;
+  margin: 2em 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 100px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 0.5em 0;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .recipe-description {
+    margin-bottom: 3em;
+  }
+
+  .ingredient:last-of-type {
+    margin-bottom: 3em;
+  }
+
+  .instruction-item {
+    max-width: 625px;
+  }
+
+  .nutrition-desc {
+    max-width: 625px;
+  }
+
+  .container {
+    background-color: white;
+    width: 45%;
+    margin: 3em auto 0 auto;
+    border-radius: 2em;
+  }
+
+  .hero {
+    overflow: auto;
+    width: 90%;
+    margin: 0 auto 0 auto;
+  }
+
+  img {
+    margin-top: 3em;
+    border-radius: 1.5em;
+  }
+
+  section {
+    width: 90%;
+  }
+
+  section:last-of-type {
+    padding-bottom: 1.5em;
+  }
+
+  .nutrition-value {
+    width: 48%;
+  }
+
+  .nutrition-name {
+    padding-left: 2em;
+  }
+
+  .attribution {
+    margin-bottom: 3em;
+  }
 }
